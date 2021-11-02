@@ -10,7 +10,7 @@ The filename is the input weighted PPI network file.
 
 The outfile_first is the cache file of intermediate results, which can be deleted after the program is completed.
 
-The outfile is the final protein complex file.
+The outfile is the final protein complexes file.
 
 Because the PPI file of the whole network is too large, it can only be put into Releases  module and can be downloaded here: https://github.com/yul-pan/HPC-Atlas/releases
 
