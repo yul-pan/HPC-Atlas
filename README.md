@@ -2,15 +2,24 @@
 
 HPC-Atlas: Computationally Constructing A Comprehensive Atlas of Human Protein Complexes
 
-Please install the python dependency package before running the clustering program，such as networkx,numpy and so on.
+Please install the python dependency package before running the clustering program, such as networkx, numpy and so on.
 
-Please modify the path of input and output files in the clustering program: filename, outfile_first and outfile.
+**input**:
+      tab separated protein interaction network: portein-1 [tab] proein-2 [tab] weight
 
-The filename is the input weighted PPI network file.
+**output**:
+      each row represents a protein complex: protein-1 [tab] ,..., protein-N
+
+**Example**
+```
+pyhton3 cluster.py --input_PPI_weight ../Data/test_data/test_weight.txt --outfile ../test_outfile.txt
+```
+
+The "--input_PPI_weight" is the input weighted PPI network file.
+
+The "--outfile" is the final protein complexes file.
 
 The outfile_first is the cache file of intermediate results, which can be deleted after the program is completed.
-
-The outfile is the final protein complexes file.
 
 Because the PPI file of the whole network is too large, it can only be put into Releases  module and can be downloaded here: https://github.com/yul-pan/HPC-Atlas/releases
 
