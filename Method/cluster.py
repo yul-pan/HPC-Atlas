@@ -1,7 +1,7 @@
 #coding:utf-8
 #Methods of identification protein complexes
 #usage: pyhton3 cluster.py --input_PPI_weight ../Data/test_data/test_weight.txt --outfile ../test_outfile.txt
-#The format of input_PPI_weight: Protein-1[\t]Protein-2
+#The format of input_PPI_weight: Protein-1[\t]Protein-2[\t]weight
 #The format of outfile: each row represents a protein complex(Protein-1[\t],...,Protein-N)
 
 import networkx as nx
